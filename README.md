@@ -1,2 +1,2 @@
 # Survey_Form
- FreeCodeCamp Survery Form link:https://github.com/Lizalise504/Survey_Form.git
+ FreeCodeCamp Survery Form link:https://lizalise504.github.io/Survey_Form/
