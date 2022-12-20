@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <h1 id="title">Feedback Form</h1>
+    <p id="description">
+        Thank You for taking the time to give<br>us your insight with regards to our Coffee
+    </p>
+    <form id="survey-form">
+        <fieldset class="inputs">
+            <label for="name" id="name-label">Enter Your Name:
+                <input id="name" name="name" type="text" placeholder="type your name here" required/>
+            </label>
+            <label for="email" id="email-label">Enter Your Email:
+                <input type="email" name="email" id="email" placeholder="type your email here" required/>
+            </label>
+            <label for="number" id="number-label">Enter Your Number:
+                <input type="number" name="number" id="number" pattern="[0-9]{8,}" min="0" max="12" placeholder="choose your number" required/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Select Your favorite Coffee
+                <select name="dropdown" id="dropdown">
+                    <option value="">(Select One)</option>
+                    <option value="1">Americano</option>
+                    <option value="2">Capuccino</option>
+                    <option value="3">Latte</option>
+                    <option value="4">Chocolate</option>
+                    <option value="5">Espresso</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="arabica-coffe">Arabica
+                <input type="radio" name="coffee-bean" id="arabica-coffee" class="inline" value="arabica">
+            </label>
+            <label for="robusta-coffee">Robusta
+                <input type="radio" name="coffee-bean" id="robusta-coffee" class="inline" value="robusta">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="cold">
+                <input type="checkbox" name="cold" id="cold" class="inline" value="Cold Brew">Cold Brew
+            </label>
+            <label for="irish">
+                <input type="checkbox" name="irish" id="irish" class="inline" value="Irish">Irish Coffee
+            </label>
+            <label for="flat">
+                <input type="checkbox" name="flat" id="flat" class="inline" value="Flat">Flat white
+            </label>
+            <label for="frappe">
+                <input type="checkbox" name="frappe" id="frappe" class="inline" value="Frappe">Frappe
+            </label>
+            <label for="latte">
+                <input type="checkbox" name="latte" id="latte" class="inline" value="Latte">Latte Macchiato
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="bio">Tell us More About You:
+                <textarea name="bio" id="bio" cols="30" rows="3" placeholder="tell us more about you and your experience"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="submit">
+    </form>
+</body>
+</html> 

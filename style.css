@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.5), rgba(75, 20, 20, 0.1)), url(./images/smoke2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#title{
+    width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+    margin: auto;
+}
+
+form{
+    width: 80vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 15px auto;
+}
+fieldset{
+    padding: 15px auto;
+    border: none;
+    border-bottom: 2px  solid;
+}
+
+label{
+    display: inline-block;
+    width: 100%;
+    margin: 10px auto;
+}
+
+input, select, textarea{
+    width: 100%;
+    background-color: rgba(75, 20, 20, 0.3);
+    border: 1px solid rgba(75, 20, 20, 0.3);
+    color: #fff;
+}
+
+.inline{
+    width: 15px;
+    margin-right: 10px;
+    vertical-align: baseline;
+}
+
+input, textarea::placeholder{
+    font-size: 15px;
+    color: #fff;
+}
+
+textarea{
+    height: 70px;
+    margin: 5px auto;
+}
+input[type="submit"]{
+    height: 30px;
+    margin: 10px 0;
+    font-size: 20px;
+}
